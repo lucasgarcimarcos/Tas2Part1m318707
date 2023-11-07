@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawn : MonoBehaviour
+public class Spawn2 : MonoBehaviour
 {
     public GameObject patientPrefab;
     public int numPatients;
