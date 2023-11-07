@@ -349,6 +349,8 @@ MonoBehaviour:
   preConditions:
   - key: Waiting
     value: 0
+  - key: FreeCubicle
+    value: 0
   afterEffects:
   - key: treatPatient
     value: 0
@@ -366,8 +368,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c437e78b30f8bde498dc208d7974e4ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actions: []
-  currentAction: {fileID: 0}
 --- !u!1 &306721101
 GameObject:
   m_ObjectHideFlags: 0
@@ -4607,11 +4607,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb9a1bc4a1633424ea04ee0e361085c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!195 &2132724650 stripped
-NavMeshAgent:
-  m_CorrespondingSourceObject: {fileID: 4695191399491926532, guid: 0fce119190bf0449caee6a98f2307710, type: 3}
-  m_PrefabInstance: {fileID: 4695191399129213722}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2132724652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4637,19 +4632,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a23fee9498c24d4681cc28f143a1d80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actionName: Go To Waiting Room
-  cost: 1
-  target: {fileID: 1000317771}
-  targetTag: WaitingArea
-  duration: 0
-  preConditions:
-  - key: hasRegistered
-    value: 0
-  afterEffects:
-  - key: isWaiting
-    value: 0
-  agent: {fileID: 2132724650}
-  running: 0
 --- !u!114 &2132724655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4662,17 +4644,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faac02b7c6f91a246a8ca98dd1f7d820, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actionName: Go To Hospital
-  cost: 1
-  target: {fileID: 2105955016}
-  targetTag: Door
-  duration: 2
-  preConditions: []
-  afterEffects:
-  - key: hasArrived
-    value: 1
-  agent: {fileID: 2132724650}
-  running: 0
 --- !u!1 &2146182846
 GameObject:
   m_ObjectHideFlags: 0

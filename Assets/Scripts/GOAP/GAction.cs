@@ -16,6 +16,9 @@ public abstract class GAction : MonoBehaviour {
     public Dictionary<string, int> preconditions;
     public Dictionary<string, int> effects;
     public WorldStates agentBeliefs;
+
+    public Ginventory inventory;
+
     public bool running = false;
 
     public GAction() {
@@ -43,6 +46,8 @@ public abstract class GAction : MonoBehaviour {
                 effects.Add(w.key, w.value);
             }
         }
+
+        inventory = this.GetComponent<GAgent>().inventory;
     }
 
     public bool IsAchievable() {
