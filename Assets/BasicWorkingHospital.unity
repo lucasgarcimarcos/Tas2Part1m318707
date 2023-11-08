@@ -2163,7 +2163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patientPrefab: {fileID: 3191194391350855714, guid: 0fce119190bf0449caee6a98f2307710, type: 3}
-  numPatients: 15
+  numPatients: 3
 --- !u!4 &1182480220
 Transform:
   m_ObjectHideFlags: 0
@@ -4737,6 +4737,10 @@ PrefabInstance:
     - target: {fileID: 3191194391350855714, guid: 0fce119190bf0449caee6a98f2307710, type: 3}
       propertyPath: m_Name
       value: Patient
+      objectReference: {fileID: 0}
+    - target: {fileID: 3191194391350855714, guid: 0fce119190bf0449caee6a98f2307710, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3203887786870572470, guid: 0fce119190bf0449caee6a98f2307710, type: 3}
       propertyPath: m_LocalPosition.x
