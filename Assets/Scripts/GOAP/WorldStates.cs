@@ -25,7 +25,7 @@ public class WorldStates {
         states.Add(key, value);
     }
 
-    void RemoveState(string key) {
+    public void RemoveState(string key) {
 
         if (HasState(key)) states.Remove(key);
     }
